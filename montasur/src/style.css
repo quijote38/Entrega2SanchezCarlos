@@ -1,0 +1,89 @@
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #18188ad2;
+  display: flex;
+}
+
+header .containerNav {
+  border: 1px solid rgb(0, 0, 0);
+  width: 20%;
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header .containerNav img {
+  transform: scale(1.4);
+}
+
+header .ContainerListNav {
+  border: 1px solid rgb(0, 0, 0);
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header .ContainerListNav ul{
+    list-style: none;
+    display: flex;
+   
+    justify-content: flex-end;
+   
+
+}
+
+header .ContainerListNav ul li{
+    text-decoration: none;
+margin: 10px;
+color: aliceblue;
+cursor: pointer;
+}
+
+header .ContainerCarrito {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+header .ContainerCarrito .containerCantidades {
+    
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+header .ContainerCarrito .containerCantidades .contadorCarrito {
+    bottom: 0;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    text-align: center;
+   
+    left: 60%;
+    border-radius: 50%;
+
+}
