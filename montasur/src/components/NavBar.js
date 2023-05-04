@@ -3,6 +3,7 @@ import ItemlistContainer from "./ItemsList";
 import CarritoWid from "./CarritoWid";
 
 const NavBar = () => {
+  
   return (
     <header>
       <div className="containerNav">

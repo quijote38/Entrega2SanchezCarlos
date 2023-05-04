@@ -15,40 +15,38 @@ const DetallesItem = () => {
   useEffect(() => {
 setDatos ([])
 
-    fetchSimulation(productos.filter(flt => flt.id == idItem),3000)
+    fetchSimulation(productos.filter(flt => flt.id === idItem),3000)
       .then(resp => setDatos(resp))
       .catch(error => console.log(error));
   }, [idItem]);
 
   return (
     <div className="detallesItem">
-      {
-      
-      
-      
-      
-      datos.map((items) => (
-        <>
-          <div className="containerIzquierda">
-            <Imagenes imagen={items.imageProduct.firtsImge} />
-          </div>
+        {
+        datos.map(items => (
+  <>
+    <div className="containerIzquierda">
+      <Imagenes imagen={datos[0].imageProduct.firtsImge} />
+    </div>
 
-          <div className="containerDerecha">
-            <Descrip
-              title={items.title}
-              parrafo={items.parrafo}
-              cantidad={items.cantidad}
-              precio={items.precio}
-            />
+    <div className="containerDerecha">
+      <Descrip
+        title={datos[0].title}
+        parrafo={datos[0].parrafo}
+        cantidad={datos[0].cantidad}
+        precio={datos[0].precio}
+      />
 
-            <div div className="botones">
-              <AddCantCart cant={5} />
+      <div div className="botones">
+        <AddCantCart cant={5} />
 
-              <BotonDetalles txt="Agregar al carrito" />
-            </div>
-          </div>
-        </>
-      ))}
+        <BotonDetalles txt="Agregar al carrito" />
+      </div>
+    </div>
+    </>
+
+))
+}
     </div>
   );
 };

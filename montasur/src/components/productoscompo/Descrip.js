@@ -1,3 +1,6 @@
+
+
+
 const Descrip = (props) => {
   return (
     <div className="cardDescrip">
@@ -8,7 +11,7 @@ const Descrip = (props) => {
         <p className="texto">{props.parrafo}</p>
       </div>
 
-      <span className="cantidades"> cantidad: {props.cantidad}</span>
+      <span className="cantidades"> cantidad: {props.cantidad} unidades</span>
 
       <span className="precio">${props.precio}</span>
     </div>
