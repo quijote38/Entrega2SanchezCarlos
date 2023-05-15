@@ -9,18 +9,22 @@ import { Link } from "react-router-dom";
 const CardItem = (props) => {
   return (
     <div className="cardItem">
-      <Imagenes imagen={props.imagen} />
+      <Imagenes imagenes={props.imagenes} />
       <Descrip
         title={props.title}
         cantidad={props.cantidad}
         precio={props.precio}
       />
       <div className="botones">
-        <BotonDetalles txt="ver detalles " />
-        <Link/>
+        
+        <Link to= {` /item/${props.id}`}>
+
+          <BotonDetalles txt= "Ver detalles" />
+        </Link>
 
         <BotonAgregar 
         id= {props.id}
+        
         
         />
       </div>
@@ -29,3 +33,6 @@ const CardItem = (props) => {
 };
 
 export default CardItem;
+
+
+

@@ -1,10 +1,13 @@
 import Logo from "./monta";
 import ItemlistContainer from "./ItemsList";
 import CarritoWid from "./CarritoWid";
+// import ContainerCarrito from "./ContainerCarrito";
+// import ContextCart from "./ContextCart";
 
 const NavBar = () => {
   
   return (
+    // <ContextCart>
     <header>
       <div className="containerNav">
 <Logo/>
@@ -26,9 +29,10 @@ const NavBar = () => {
         
          </div>
       
-      
+         {/* <ContainerCarrito /> */}
 
     </header>
+    // </ContextCart>
   );
 };
 

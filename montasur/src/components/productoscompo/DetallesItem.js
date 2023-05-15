@@ -1,43 +1,44 @@
 import Imagenes from "./Imagenes";
 import Descrip from "./Descrip";
-import "../../style/detalles.css";
+import "../../style/detallesItem.css";
 import fetchSimulation from "../../utils/fetchSimulation";
 import BotonDetalles from "./BotonDetalles";
 import AddCantCart from "./AddCantCart";
 import productos from "../../utils/products";
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 import { useState, useEffect } from "react";
+
 
 const DetallesItem = () => {
   const [datos, setDatos] = useState([]);
   const { idItem } = useParams();
 
-  useEffect(() => {
-setDatos ([])
+    useEffect(() => {
+  setDatos ([])
 
-    fetchSimulation(productos.filter(flt => flt.id === idItem),3000)
+    fetchSimulation(productos.filter(flt => flt.id === idItem),2000)
       .then(resp => setDatos(resp))
       .catch(error => console.log(error));
   }, [idItem]);
 
   return (
-    <div className="detallesItem">
+    <div className="detailsItem">
         {
         datos.map(items => (
   <>
-    <div className="containerIzquierda">
-      <Imagenes imagen={datos[0].imageProduct.firtsImge} />
+    <div className="containerLeft">
+      <Imagenes imagen={items.imageProduct.firstImage} />
     </div>
 
-    <div className="containerDerecha">
+    <div className="containerRight">
       <Descrip
-        title={datos[0].title}
-        parrafo={datos[0].parrafo}
-        cantidad={datos[0].cantidad}
-        precio={datos[0].precio}
+        title={items.title}
+        parrafo={items.parrafo}
+        cantidad={items.cantidad}
+        precio={items.precio}
       />
 
-      <div div className="botones">
+      <div className="buttons">
         <AddCantCart cant={5} />
 
         <BotonDetalles txt="Agregar al carrito" />

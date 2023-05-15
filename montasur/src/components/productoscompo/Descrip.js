@@ -3,15 +3,15 @@
 
 const Descrip = (props) => {
   return (
-    <div className="cardDescrip">
+    <div className="cardDescription">
       <h3 className="titulos">{props.title}</h3>
 
-      <div className="descripcion">
+      <div className="description">
         <span className="tituloDescrip"> Descripción:</span>
         <p className="texto">{props.parrafo}</p>
       </div>
 
-      <span className="cantidades"> cantidad: {props.cantidad} unidades</span>
+      <span className="cant"> cantidad: {props.cantidad} unidades</span>
 
       <span className="precio">${props.precio}</span>
     </div>

@@ -3,17 +3,20 @@ import { Link } from "react-router-dom"
 const ItemlistContainer = (props) => {
   return (
     <ul>
-      <li>
-        <Link to= "category/Mochilas"> {props.itemOne} </Link>
+      <li >
+        <Link to= "category/mochilas"> {props.itemOne} </Link>
       </li>
+      
       <li>
-        <Link to= "category/Carpas"> {props.itemTwo} </Link>
+        <Link to= "category/carpas"> {props.itemTwo} </Link>
       </li>
+      
       <li>
-        <Link to= "category/Zapatos"> {props.itemThree} </Link>
+        <Link to= "category/zapatos"> {props.itemThree} </Link>
       </li>
+      
       <li>
-        <Link to= "category/Sacos de dormir"> {props.itemFour} </Link>
+        <Link to= "category/sacos de dormir"> {props.itemFour} </Link>
       </li>
     </ul>
   );

@@ -4,7 +4,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Mochilas",
+    type: "mochilas",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -17,7 +17,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Mochilas",
+    type: "mochilas",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -30,7 +30,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Carpas",
+    type: "carpas",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -43,7 +43,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Carpas",
+    type: "carpas",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -56,7 +56,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Zapatos",
+    type: "zapatos",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -69,7 +69,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Zapatos",
+    type: "zapatos",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -82,7 +82,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Sacos de Dormir",
+    type: "sacos de Dormir",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
@@ -95,7 +95,7 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "Sacos de Dormir",
+    type: "sacos de Dormir",
     imageProduct: {
       firstImage:
         "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
