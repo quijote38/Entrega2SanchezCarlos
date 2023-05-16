@@ -5,10 +5,9 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "mochilas",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -18,10 +17,9 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "mochilas",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -31,10 +29,9 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "carpas",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -44,10 +41,9 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "carpas",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -57,10 +53,9 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "zapatos",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -70,23 +65,21 @@ const productos = [
     description: "Acá viene la descripción del producto",
     stock: 15,
     type: "zapatos",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
-  }, 
+  },
 
   {
     id: 7,
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "sacos de Dormir",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
+    type: "sacos de dormir",
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
+
     price: 20000,
   },
 
@@ -95,15 +88,12 @@ const productos = [
     title: "Doite1",
     description: "Acá viene la descripción del producto",
     stock: 15,
-    type: "sacos de Dormir",
-    imageProduct: {
-      firstImage:
-        "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
-    },
-    price: 20000,
-  }
+    type: "sacos de dormir",
+    imageProduct:
+      "https://res.cloudinary.com/dutridocu/image/upload/v1670288323/JAVASCRIPT/mochila_1_eqhjii.jpg",
 
-  
+    price: 20000,
+  },
 ];
 
-export default productos; 
+export default productos;

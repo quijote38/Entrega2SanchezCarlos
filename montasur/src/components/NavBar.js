@@ -20,7 +20,7 @@ const NavBar = () => {
         itemOne = "Mochilas"
         itemTwo = "Carpas"
         itemThree = "Zapatos"
-        itemFour = "Sacos de dormir"
+        itemFour = "sacos de dormir"
         />
       </nav>
 

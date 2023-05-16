@@ -33,6 +33,7 @@ useEffect(() => {
       {datos.map(product => (
         <CardItem
           key={product.id}
+          id={product.id}
           imagen={product.imageProduct.firstImage}
           title={product.title}
           cantidad={product.stock}
@@ -47,15 +48,4 @@ export default ContainerTarjetaItem;
 
 
 
- // setDatos ([]);
-
-  //   if (idCategory == undefined){
-  //     fetchSimulation(productos, 3000)
-  //     .then(resp => setDatos(resp))
-  //     .catch(error => console.log(error))
-  //   }else{
-  //     fetchSimulation(productos.filter(filter => filter.type == idCategory ), 3000)
-  //     .then(resp => setDatos(resp))
-  //     .catch(error => console.log(error))
-  //   }
-  // }, [idCategory]);
+ 

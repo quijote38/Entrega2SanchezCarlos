@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const CardItem = (props) => {
   return (
     <div className="cardItem">
-      <Imagenes imagenes={props.imagenes} />
+      <Imagenes imagenes={props.imagen} />
       <Descrip
         title={props.title}
         cantidad={props.cantidad}
@@ -17,7 +17,7 @@ const CardItem = (props) => {
       />
       <div className="botones">
         
-        <Link to= {` /item/${props.id}`}>
+        <Link to= {`/item/${props.id}`}>
 
           <BotonDetalles txt= "Ver detalles" />
         </Link>

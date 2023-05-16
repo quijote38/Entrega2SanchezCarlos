@@ -16,7 +16,7 @@ const DetallesItem = () => {
     useEffect(() => {
   setDatos ([])
 
-    fetchSimulation(productos.filter(flt => flt.id === idItem),2000)
+    fetchSimulation(productos.filter((flt) => flt.id === parseInt(idItem)),2000)
       .then(resp => setDatos(resp))
       .catch(error => console.log(error));
   }, [idItem]);
@@ -38,7 +38,7 @@ const DetallesItem = () => {
         precio={items.precio}
       />
 
-      <div className="buttons">
+      <div className="botones">
         <AddCantCart cant={5} />
 
         <BotonDetalles txt="Agregar al carrito" />
