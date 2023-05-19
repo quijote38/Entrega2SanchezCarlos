@@ -12,11 +12,11 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ContainerTarjetaItem />} />
-          <Route path="/item/:idItem" element={<DetallesItem />} />
+          <Route path="/" element={ <ContainerTarjetaItem />} />
+          <Route path="/item/:idItem" element={ <DetallesItem />} />
           <Route
             path="/category/:idCategory"
-            element={<ContainerTarjetaItem />}
+            element={ <ContainerTarjetaItem />}
           />
         </Routes>
       </BrowserRouter>

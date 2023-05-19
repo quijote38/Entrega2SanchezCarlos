@@ -1,10 +1,11 @@
 import deleteW from "../img/deleteW.svg";
 
-const ItemCart = ({ id, title, price, quantity, image }) => {
+const ItemCart = ({id, title, price, quantity, image}) => {
+ 
   return (
     <div className="itemCart">
       <div className="img">
-        <img src={image}> </img>
+        <img src={image} alt="img" />
       </div>
 
       <div className="description-cantidad">
@@ -18,7 +19,7 @@ const ItemCart = ({ id, title, price, quantity, image }) => {
       </div>
 
       <button className="delete">
-        <img src={deleteW}> </img>
+        <img src={deleteW} />
       </button>
 
     </div>
