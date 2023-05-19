@@ -36,9 +36,9 @@ const ContextCart = ( {children} ) => {
   const clearCart = () => {
     setListCart ( [] );
   }
-const remove = id => {  //ojo
-    const updateList = listCart.filter(product => product.id !== id)
-    setListCart (updateList);
+const remove = id => {  
+    const updateList = listCart.filter(product => product.id !== id);
+    setListCart(updateList);
 } 
 
   return <listaCartContext.Provider value={ {remove, listCart, addProduct, clearCart} }>

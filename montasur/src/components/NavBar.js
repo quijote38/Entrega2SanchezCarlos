@@ -2,11 +2,14 @@ import Logo from "./monta";
 import ItemlistContainer from "./ItemsList";
 import CarritoWid from "./CarritoWid";
 import ContainerCart from "./ContainerCart";
+import CartContexts from "./CartContexts";
 
 
 const NavBar = () => {
   
   return (
+
+    <CartContexts>
     
     <header>
       <div className="containerNav">
@@ -32,6 +35,7 @@ const NavBar = () => {
        
 <ContainerCart />
     </header>
+    </CartContexts>
   
   );
 };
