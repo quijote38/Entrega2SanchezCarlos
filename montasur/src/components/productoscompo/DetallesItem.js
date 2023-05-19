@@ -27,7 +27,7 @@ const DetallesItem = () => {
         datos.map(items => (
   <>
     <div className="containerLeft">
-      <Imagenes imagen={items.imageProduct.firstImage} />
+      <Imagenes imagen={items.imageProduct} />
     </div>
 
     <div className="containerRight">
