@@ -5,14 +5,14 @@ import productos from "../../utils/products.js";
 
 export const listaCartContext = createContext(null);
 
-const ContextCart = ({children}) => {
+const ContextCart = ( {children} ) => {
   const [listCart, setListCart] = useState([]);
 
   const addProduct = (id) => {
-    const productAdd = productos.find(product => product.id === id);
+    const productAdd = productos.find(product => product.id === id)
     
    
-    const productToMain = listCart.filter(product => product.id !== id);
+    const productToMain = listCart.filter(product => product.id !== id)
 
     let add = true;
     for (let product of listCart) {
@@ -20,8 +20,8 @@ const ContextCart = ({children}) => {
         let quantity = product.quantity;
 
         if (quantity < productAdd.stock) {
-          const newQuantity = { ...product, quantity: quantity + 1 };
-          setListCart([...productToMain, newQuantity]);
+          const newQuantity = { ...product, quantity: quantity + 1 }
+          setListCart( [...productToMain, newQuantity] );
         }
         add = false;
         break;
@@ -33,18 +33,17 @@ const ContextCart = ({children}) => {
   };
 
   
-  console.log(listCart)
   const clearCart = () => {
-    setListCart ( [] )
+    setListCart ( [] );
   }
-const remove = id => {
-    const updateList = listCart.filter(product => product.id !== id);
+const remove = id => {  //ojo
+    const updateList = listCart.filter(product => product.id !== id)
     setListCart (updateList);
 } 
 
-  return <listaCartContext.Provider value={{remove, listCart, addProduct, clearCart}}>
+  return <listaCartContext.Provider value={ {remove, listCart, addProduct, clearCart} }>
        {children}
-  </listaCartContext.Provider>;
+  </listaCartContext.Provider>
 };
 
 export default ContextCart; //12:53
